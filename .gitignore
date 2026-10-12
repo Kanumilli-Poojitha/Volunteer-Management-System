@@ -1,0 +1,28 @@
+# Secrets / local config - never commit
+.env
+.env.*
+!.env.example
+**/application-local.properties
+**/application-local.yml
+*.pem
+*.key
+
+# Backend build output
+backend/target/
+*.class
+*.jar
+hs_err_pid*
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/coverage/
+
+# Logs, test output, IDE
+*.log
+logs/
+backend/**/surefire-reports/
+.idea/
+.vscode/
+*.iml
+.DS_Store
